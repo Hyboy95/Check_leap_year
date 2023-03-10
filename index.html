@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KT_nam_nhuan</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+
+    let year = +prompt('Enter a year:');
+    let isLeapyear = false;
+
+    if (year % 4 === 0) {
+        if (year % 100 === 0) {
+            if (year % 400 === 0) {
+                isLeapyear = true;
+            }
+        } else
+            isLeapyear = true;
+    } else
+        isLeapyear = false;
+
+    if (isLeapyear) {
+        alert(`Năm ${year} là năm nhuận`);
+    } else
+        alert(`Năm ${year} không là năm nhuận`);
+
+
+    // let year = +prompt('Enter a year');
+    //
+    // if (year % 4 !== 0) {
+    //     alert( year + ' không là năm nhuận')
+    // } else
+    // if (year % 4 === 0 && year % 100 !== 0) {
+    //     alert( year + ' là năm nhuận')
+    // } else
+    //     if (year % 100 === 0 && year % 400 !== 0) {
+    //         alert(year + ' không là năm nhuận')
+    // } else
+    //     if(year % 100 === 0 && year % 400 === 0) {
+    //         alert( year + ' là năm nhuận')
+    //     }
+
+</script>
